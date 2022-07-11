@@ -1,0 +1,47 @@
+Toda la informacion en cuanto a codigo, nombres, bases de datos e informacion dentro de la misma API se manejara en ingles
+con la unica excepcion de este documento para mayor comprensibilidad de sus elementos internos (API) y posteriormente la informacion que se muestre al usuario
+a menos que se decida que dicha informacion se muestre en ingles tambien. Pero eso se decididira en el futuro cuando se cree el Front End, de momento todo 
+
+###BASE DE DATOS###
+
+Separadores:
+Todos los separadores entre palabras seran guion bajo /EJEMPLO: primer_nombre
+
+Base de datos: api_vaccines
+
+Tablas: 
+- types_of_vaccines
+- population
+
+Contenido:
+/types_of_vaccines:
+col1: vaccine_id
+col2: vaccine_name
+col3: available_quantity
+col4: vaccine_type
+col5: vaccine_creator
+
+/population:
+col1: state_id
+col2: States
+col3: total_population
+col4: unvaccinated_population
+col5: vaccinated_population
+
+###MODELOS###
+
+$fill = para guardar el arreglo con los nombres de las columnas de la tabla
+
+###METODOS###
+
+Metodos dentro de los controladores para los verbos http
+
+index()     /para mostrar todo
+store()     /para almacenar informacion
+show()      /mostrar informacion por in
+update()    /para actualizar la informacion por id
+destroy()   /eliminar registros por id
+
+###RUTAS###
+
+///////////////
